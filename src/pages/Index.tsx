@@ -24,7 +24,7 @@ const MENU_ITEMS: MenuItem[] = [
   { id: 1, name: "Маргарита", description: "Томатный соус, моцарелла фиор ди латте, базилик, оливковое масло", price: 590, weight: "320г", tag: "Хит", emoji: "🍅" },
   { id: 2, name: "Трюфельная", description: "Крем-соус из трюфеля, моцарелла, пармезан, руккола, трюфельное масло", price: 890, weight: "340г", tag: "Новинка", emoji: "🍄" },
   { id: 3, name: "Прошутто", description: "Томатный соус, моцарелла, пармская ветчина, руккола, пармезан", price: 790, weight: "350г", emoji: "🥩" },
-  { id: 4, name: "Четыре сыра", description: "Моцарелла, горгонзола, пармезан, фонтина, свежий тимьян", price: 750, weight: "330г", emoji: "🧀" },
+  { id: 4, name: "5 сыров", description: "Моцарелла, горгонзола, пармезан, фонтина, свежий тимьян", price: 750, weight: "330г", emoji: "🧀", image: "https://cdn.poehali.dev/projects/9000aa53-89d2-451b-bd4e-76cc90c55dac/bucket/c1ff1764-1a63-49df-886a-215dd7601411.jpg" },
   { id: 5, name: "Вегетарианская", description: "Томатный соус, моцарелла, цукини, перец, баклажан, черри", price: 680, weight: "360г", emoji: "🥗" },
   { id: 6, name: "Диавола", description: "Томатный соус, моцарелла, острая салями, перец чили, базилик", price: 720, weight: "340г", tag: "Острая", emoji: "🌶️" },
   { id: 7, name: "Шакшука с грибами", description: "Соус томатный, моцарелла, шампиньоны, красный лук, яйцо, орегано, руккола", price: 450, weight: "580-600г", emoji: "🍳", image: "https://cdn.poehali.dev/projects/9000aa53-89d2-451b-bd4e-76cc90c55dac/bucket/e260d0ef-3e60-42bf-96b2-3a3483e574ed.png" },
