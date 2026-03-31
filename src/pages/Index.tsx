@@ -28,6 +28,7 @@ const MENU_ITEMS: MenuItem[] = [
   { id: 5, name: "Вегетарианская", description: "Томатный соус, моцарелла, цукини, перец, баклажан, черри", price: 680, weight: "360г", emoji: "🥗" },
   { id: 6, name: "Диавола", description: "Томатный соус, моцарелла, острая салями, перец чили, базилик", price: 720, weight: "340г", tag: "Острая", emoji: "🌶️" },
   { id: 7, name: "Шакшука с грибами", description: "Соус томатный, моцарелла, шампиньоны, красный лук, яйцо, орегано, руккола", price: 450, weight: "580-600г", emoji: "🍳", image: "https://cdn.poehali.dev/projects/9000aa53-89d2-451b-bd4e-76cc90c55dac/bucket/e260d0ef-3e60-42bf-96b2-3a3483e574ed.png" },
+  { id: 8, name: "Том-Ям с курицей", description: "Соус «Том-Ям», моцарелла, куриная грудка, шампиньоны, красный лук, черри, лайм", price: 535, weight: "580-590г", emoji: "🍋", image: "https://cdn.poehali.dev/projects/9000aa53-89d2-451b-bd4e-76cc90c55dac/bucket/755cba1a-e79c-4b0b-958b-773856e96dc4.jpg" },
 ];
 
 const REVIEWS = [
@@ -187,7 +188,7 @@ export default function Index() {
                 style={{ animationDelay: `${i * 0.08}s`, animationFillMode: 'forwards' }}
               >
                 <div className="relative h-52 bg-muted flex items-center justify-center overflow-hidden">
-                  <img src={item.image ?? MENU_IMAGE} alt={item.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={item.image ?? MENU_IMAGE} alt={item.name} className={`w-full h-full group-hover:scale-105 transition-transform duration-500 ${item.image ? 'object-contain' : 'object-cover'}`} />
                   <div className="absolute inset-0 bg-gradient-to-t from-dark-brown/40 to-transparent" />
                   <span className="absolute top-3 left-3 text-3xl">{item.emoji}</span>
                   {item.tag && (
